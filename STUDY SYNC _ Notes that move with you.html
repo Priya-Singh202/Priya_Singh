@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY SYNC | Notes that move with you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./STUDY SYNC _ Notes that move with you_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./STUDY SYNC _ Notes that move with you_files/style.css">
+    <link rel="stylesheet" href="./STUDY SYNC _ Notes that move with you_files/all.min.css">
+</head>
+<body class="">
+<header class="navbar">
+    <a class="logo" href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;home&#39;)"><span class="logo-mark"><i class="fa-solid fa-bolt"></i></span><span>STUDY <b>SYNC</b></span></a>
+    <nav><a href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;home&#39;)">Overview</a><a href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;notes&#39;)">Browse notes</a><a href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;mostDownloaded&#39;)">Trending</a><a href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;upload&#39;)">Contribute</a></nav>
+    <div class="nav-buttons"><button onclick="toggleDarkMode()" class="icon-btn" title="Toggle dark mode"><i class="fa-solid fa-moon"></i></button><button onclick="showPage(&#39;login&#39;)" class="login-btn">Log in</button><button onclick="logout()" class="logout-btn">Log out</button></div>
+</header>
+<main>
+<section id="home" class="page home-page active">
+    <div class="hero"><div class="hero-content"><p class="eyebrow"><span></span> THE CAMPUS KNOWLEDGE LOOP</p><h1>Find the right notes.<br><span>Keep moving.</span></h1><p>A focused space for students and faculty to share the material that makes the next breakthrough a little easier.</p><div class="hero-buttons"><button onclick="showPage(&#39;notes&#39;)" class="primary-btn">Explore library <i class="fa-solid fa-arrow-right"></i></button><button onclick="showPage(&#39;upload&#39;)" class="secondary-btn">Share your notes <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div><div class="hero-proof"><div class="avatar-stack"><span>AK</span><span>RV</span><span>MS</span><span>+</span></div><p><strong>2,400+</strong> learners are syncing up</p></div></div><div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="paper-card main-paper"><div class="paper-top"><span class="file-badge pdf">PDF</span><span class="paper-dots">...</span></div><div class="paper-lines"><i></i><i></i><i></i><i></i></div><div class="paper-footer"><span>Data Structures</span><b>94%</b></div></div><div class="floating-note note-one"><i class="fa-solid fa-heart"></i><strong>+28</strong><small>saved today</small></div><div class="floating-note note-two"><i class="fa-solid fa-circle-check"></i><strong>Approved</strong><small>by faculty</small></div></div></div>
+    <div class="section-intro"><div><p class="eyebrow">YOUR STUDY DESK</p><h2>Everything useful, in one rhythm.</h2></div><button onclick="showPage(&#39;notes&#39;)" class="outline-btn">View all notes <i class="fa-solid fa-arrow-right"></i></button></div>
+    <div class="features"><div class="feature-card"><i class="fa-solid fa-book-open"></i><h3>Curated library</h3><p>Reliable material, sorted by subject, semester, and faculty.</p></div><div class="feature-card"><i class="fa-solid fa-cloud-arrow-up"></i><h3>Share your edge</h3><p>Upload PDF, PPT, or DOC notes for the whole campus.</p></div><div class="feature-card"><i class="fa-solid fa-chart-line"></i><h3>See what works</h3><p>Likes, comments, and downloads surface the best material.</p></div></div>
+</section>
+<section id="login" class="page auth-page"><div class="auth-container"><div class="auth-aside"><p class="eyebrow">WELCOME BACK</p><h2>Your best study session starts here.</h2><p>Pick up where you left off, or discover a better way to understand the next topic.</p></div><div class="auth-card"><span class="mini-mark"><i class="fa-solid fa-bolt"></i></span><p class="eyebrow">MEMBER ACCESS</p><h2>Log in to sync.</h2><form onsubmit="loginUser(event)"><label>Email address</label><div class="input-box"><i class="fa-solid fa-envelope"></i><input type="email" id="loginEmail" placeholder="you@campus.edu" required=""></div><label>Password</label><div class="input-box"><i class="fa-solid fa-lock"></i><input type="password" id="loginPassword" placeholder="Your password" required=""></div><button class="primary-btn full-btn">Continue <i class="fa-solid fa-arrow-right"></i></button></form><p class="auth-switch">New to Study Sync? <a href="file:///C:/Users/Neeru%20Singh/OneDrive/Desktop/ELITE/index.html#" onclick="showPage(&#39;signup&#39;)">Create an account</a></p><p class="demo-info">Demo: admin@studysync.com / admin123</p></div></div></section>
+<section id="signup" class="page auth-page"><div class="auth-container"><div class="auth-aside"><p class="eyebrow">JOIN THE LOOP</p><h2>Give good notes a bigger life.</h2><p>Build your personal study shelf and contribute to a smarter campus community.</p></div><div class="auth-card"><span class="mini-mark"><i class="fa-solid fa-user-plus"></i></span><p class="eyebrow">NEW MEMBER</p><h2>Create your account.</h2><form onsubmit="signupUser(event)"><label>Full name</label><div class="input-box"><i class="fa-solid fa-user"></i><input type="text" id="signupName" placeholder="Alex Morgan" required=""></div><label>Email address</label><div class="input-box"><i class="fa-solid fa-envelope"></i><input type="email" id="signupEmail" placeholder="you@campus.edu" required=""></div><label>Password</label><div class="input-box"><i class="fa-solid fa-lock"></i><input type="password" id="signupPassword" placeholder="At least 6 characters" required=""></div><label>Account type</label><select id="signupRole" required=""><option value="">Choose your role</option><option value="student">Student</option><option value="admin">Admin</option></select><button class="primary-btn full-btn">Create account <i class="fa-solid fa-arrow-right"></i></button></form></div></div></section>
+<section id="notes" class="page"><div class="page-header split-header"><div><p class="eyebrow">THE LIBRARY</p><h2>Find your next unlock.</h2><p>Search trusted notes by what you are learning right now.</p></div><button onclick="showPage(&#39;upload&#39;)" class="primary-btn">Upload notes <i class="fa-solid fa-plus"></i></button></div><div class="filter-container"><div class="search-wrap"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="searchInput" placeholder="Search title, topic, or keyword..." onkeyup="displayNotes()"></div><select id="subjectFilter" onchange="displayNotes()"><option value="">All subjects</option><option>Data Structures</option><option>DBMS</option><option>Operating System</option><option>Computer Networks</option><option>Mathematics</option></select><select id="semesterFilter" onchange="displayNotes()"><option value="">All semesters</option><option value="1">Semester 1</option><option value="2">Semester 2</option><option value="3">Semester 3</option><option value="4">Semester 4</option><option value="5">Semester 5</option><option value="6">Semester 6</option></select><input type="text" id="facultyFilter" placeholder="Filter by faculty" onkeyup="displayNotes()"></div><div id="notesGrid" class="notes-grid">
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+
+            <h3>Introduction to Data Structures</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                Data Structures
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Dr. Sharma
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        Array
+                    </span><span class="tag">
+                        Stack
+                    </span><span class="tag">
+                        Queue
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                15
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                85
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(1)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(1)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(1)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(1)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+
+            <h3>DBMS Complete Notes</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                DBMS
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Dr. Verma
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        SQL
+                    </span><span class="tag">
+                        Database
+                    </span><span class="tag">
+                        ER Model
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                28
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                120
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(2)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(2)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(2)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(2)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-powerpoint"></i>
+
+            </div>
+
+
+            <h3>Operating System Unit 1</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                Operating System
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Prof. Singh
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        Process
+                    </span><span class="tag">
+                        CPU
+                    </span><span class="tag">
+                        Scheduling
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                12
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                67
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(3)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(3)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(3)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(3)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div></section>
+<section id="upload" class="page"><div class="page-header"><p class="eyebrow">CONTRIBUTE</p><h2>Put your notes to work.</h2><p>Every upload is reviewed before it joins the shared library.</p></div><div class="upload-container"><form onsubmit="uploadNotes(event)" class="upload-form"><label>Note title</label><input type="text" id="noteTitle" placeholder="e.g. Graph Algorithms - Quick Revision" required=""><div class="form-grid"><div><label>Subject</label><select id="noteSubject" required=""><option value="">Select subject</option><option>Data Structures</option><option>DBMS</option><option>Operating System</option><option>Computer Networks</option><option>Mathematics</option></select></div><div><label>Semester</label><select id="noteSemester" required=""><option value="">Select semester</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div><div><label>Faculty</label><input type="text" id="noteFaculty" placeholder="Faculty name" required=""></div><div><label>Topic tags</label><input type="text" id="noteTags" placeholder="Graphs, BFS, DFS"></div></div><label>Upload file</label><input type="file" id="noteFile" accept=".pdf,.ppt,.pptx,.doc,.docx" required=""><button class="primary-btn full-btn">Submit for review <i class="fa-solid fa-arrow-up"></i></button></form></div></section>
+<section id="mostDownloaded" class="page"><div class="page-header split-header"><div><p class="eyebrow">COMMUNITY SIGNAL</p><h2>Most downloaded.</h2><p>Notes students keep coming back to.</p></div><span class="trend-label"><i class="fa-solid fa-fire"></i> Trending now</span></div><div id="popularNotes" class="notes-grid">
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+
+            <h3>DBMS Complete Notes</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                DBMS
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Dr. Verma
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        SQL
+                    </span><span class="tag">
+                        Database
+                    </span><span class="tag">
+                        ER Model
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                28
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                120
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(2)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(2)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(2)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(2)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+
+            <h3>Introduction to Data Structures</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                Data Structures
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Dr. Sharma
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        Array
+                    </span><span class="tag">
+                        Stack
+                    </span><span class="tag">
+                        Queue
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                15
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                85
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(1)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(1)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(1)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(1)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    
+
+        <div class="note-card">
+
+            <div class="note-icon">
+
+                <i class="fa-solid fa-file-powerpoint"></i>
+
+            </div>
+
+
+            <h3>Operating System Unit 1</h3>
+
+
+            <p class="note-meta">
+
+                <strong>Subject:</strong>
+                Operating System
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Semester:</strong>
+                3
+
+            </p>
+
+
+            <p class="note-meta">
+
+                <strong>Faculty:</strong>
+                Prof. Singh
+
+            </p>
+
+
+            <div class="tags">
+
+                <span class="tag">
+                        Process
+                    </span><span class="tag">
+                        CPU
+                    </span><span class="tag">
+                        Scheduling
+                    </span>
+
+            </div>
+
+
+            <p class="note-meta">
+
+                <i class="fa-solid fa-heart"></i>
+                12
+
+                &nbsp;&nbsp;
+
+                <i class="fa-solid fa-download"></i>
+                67
+
+            </p>
+
+
+            <div class="note-actions">
+
+                <button class="like-btn" onclick="likeNote(3)">
+
+                    <i class="fa-solid fa-heart"></i>
+                    Like
+
+                </button>
+
+
+                <button class="comment-btn" onclick="openComments(3)">
+
+                    <i class="fa-solid fa-comment"></i>
+                    Comment
+
+                </button>
+
+
+                <button class="download-btn" onclick="downloadNote(3)">
+
+                    <i class="fa-solid fa-download"></i>
+                    Download
+
+                </button>
+
+                <button class="share-btn" onclick="shareOnWhatsApp(3)" title="Share on WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Share
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div></section>
+<section id="admin" class="page"><div class="page-header split-header"><div><p class="eyebrow">CONTROL ROOM</p><h2>Keep the library sharp.</h2><p>Review incoming uploads and keep quality high.</p></div><span class="admin-chip"><i class="fa-solid fa-shield-halved"></i> Admin view</span></div><div class="admin-stats"><div class="stat-card"><i class="fa-solid fa-users"></i><h3 id="userCount">2</h3><p>Registered users</p></div><div class="stat-card"><i class="fa-solid fa-file-lines"></i><h3 id="noteCount">3</h3><p>Total notes</p></div><div class="stat-card"><i class="fa-solid fa-hourglass-half"></i><h3 id="pendingCount">0</h3><p>Awaiting review</p></div></div><div class="admin-table-container"><table><thead><tr><th>Note</th><th>Subject</th><th>Semester</th><th>Faculty</th><th>Status</th><th>Action</th></tr></thead><tbody id="adminTable">
+
+            <tr>
+
+                <td>
+                    Introduction to Data Structures
+                </td>
+
+                <td>
+                    Data Structures
+                </td>
+
+                <td>
+                    3
+                </td>
+
+                <td>
+                    Dr. Sharma
+                </td>
+
+                <td>
+
+                    <strong style="
+                        color:
+                        #16a34a">
+
+                        APPROVED
+
+                    </strong>
+
+                </td>
+
+                <td>
+
+                    
+
+
+                    <button class="delete-btn" onclick="deleteNote(1)">
+
+                        Delete
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        
+
+            <tr>
+
+                <td>
+                    DBMS Complete Notes
+                </td>
+
+                <td>
+                    DBMS
+                </td>
+
+                <td>
+                    3
+                </td>
+
+                <td>
+                    Dr. Verma
+                </td>
+
+                <td>
+
+                    <strong style="
+                        color:
+                        #16a34a">
+
+                        APPROVED
+
+                    </strong>
+
+                </td>
+
+                <td>
+
+                    
+
+
+                    <button class="delete-btn" onclick="deleteNote(2)">
+
+                        Delete
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        
+
+            <tr>
+
+                <td>
+                    Operating System Unit 1
+                </td>
+
+                <td>
+                    Operating System
+                </td>
+
+                <td>
+                    3
+                </td>
+
+                <td>
+                    Prof. Singh
+                </td>
+
+                <td>
+
+                    <strong style="
+                        color:
+                        #16a34a">
+
+                        APPROVED
+
+                    </strong>
+
+                </td>
+
+                <td>
+
+                    
+
+
+                    <button class="delete-btn" onclick="deleteNote(3)">
+
+                        Delete
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </tbody></table></div></section>
+</main>
+<div id="noteModal" class="modal"><div class="modal-content"><button class="close" onclick="closeModal()" title="Close"><i class="fa-solid fa-xmark"></i></button><p class="eyebrow">NOTE DISCUSSION</p><h2 id="modalTitle"></h2><p id="modalInfo"></p><hr><h3><i class="fa-solid fa-comments"></i> Comments</h3><div id="commentsList"></div><div class="comment-box"><input type="text" id="commentInput" placeholder="Add a thoughtful comment..."><button onclick="addComment()">Post <i class="fa-solid fa-paper-plane"></i></button></div></div></div>
+<footer><div class="footer-logo"><span class="logo-mark"><i class="fa-solid fa-bolt"></i></span> STUDY SYNC</div><p>Shared knowledge, synchronized.</p><small>© 2026 Study Sync</small></footer>
+<script src="./STUDY SYNC _ Notes that move with you_files/java script"></script>
+
+
+</body></html>
